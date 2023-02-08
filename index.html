@@ -1,9 +1,9 @@
-<!--
 <!DOCTYPE html>
 <html>
     <head>
         <title>Sample Site Title</title>
     </head>
+<!--
     <body>
         <h1><center>Debugging Experiment</center></h1>
         <p>Hello World</p>
@@ -13,41 +13,42 @@ https://www.w3schools.com/howto/howto_css_responsive_form.asp
 http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html
 
 -->
+    <body>
+        <div class="container">
+            <style>
+                pre code {
+                    background-color: #eee;
+                    border: 1px solid #999;
+                    display: block;
+                    padding: 20px;
+                    width: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            </style>
 
-<div class="container">
-    <style>
-        pre code {
-            background-color: #eee;
-            border: 1px solid #999;
-            display: block;
-            padding: 20px;
-            width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-
-    <form action="action_page.php">
-        <h2><center>Question 1</center></h2>
-        <p><center>What is the correct output?</center></p>
-        <pre>
-            <code>
-                System.out.println("Hello World");
-            </code>
-        </pre>
-        <div class="row">
-            <div class="col-75">
-                <label for="subject"><center>Answer</center></label>
+            <form action="action_page.php">
+                <h2><center>Question 1</center></h2>
+                <p><center>What is the correct output?</center></p>
+                <pre>
+                    <code>
+                        System.out.println("Hello World");
+                    </code>
+                </pre>
+                <div class="row">
+                    <div class="col-75">
+                        <label for="subject"><center>Answer</center></label>
+                </div>
+                <div class="col-75">
+                    <center>
+                        <textarea id="subject" name="subject" placeholder="Type the answer here..." style="width:500px"></textarea>
+                    </center>
+                </div>
+                </div>
+                    <div class="row">
+                    <center><input type="submit" value="Submit"></center>
+                </div>
+            </form>
+            <script src="app.js"></script>
         </div>
-        <div class="col-75">
-            <center>
-                <textarea id="subject" name="subject" placeholder="Type the answer here..." style="width:500px"></textarea>
-            </center>
-        </div>
-        </div>
-            <div class="row">
-            <center><input type="submit" value="Submit"></center>
-        </div>
-    </form>
-    <script src="app.js"></script>
-</div>
+    </body>
