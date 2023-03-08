@@ -39,3 +39,15 @@ The structure of `mysite` is like so:
 5) Now that you've successfully created a project, create the poll app in the same directory as `manage.py` with `python3 manage.py startapp polls`
 ![image](https://user-images.githubusercontent.com/86854157/223864910-fb3c8801-31fe-4afa-8275-27268dd7631e.png)
 
+6) Open the file `polls/views.py` with your editor of choice
+* To use VIM, do `vim views.py` and use `:wq` to quit
+* To use GNU nano, do `nano views.py` and use `Ctrl+X` to quit
+![image](https://user-images.githubusercontent.com/86854157/223866176-3a80e50e-fda6-4f60-8244-4e06d34bd2b0.png)
+
+7) Type the following code:
+```
+from django.http import HttpResponse
+
+def index(request):
+  return HttpResponse("Hello, world. You're at the polls index.")
+```
