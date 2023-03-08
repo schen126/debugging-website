@@ -41,6 +41,7 @@ The structure of `mysite` is like so:
 
 6) Open the file `polls/views.py` with your editor of choice
 * To use VIM, do `vim views.py` and use `:wq` to quit
+* To use VSCode, do `code view.py` (`code ..` to open entire directory)
 * To use GNU nano, do `nano views.py` and use `Ctrl+X` to quit
 ![image](https://user-images.githubusercontent.com/86854157/223866793-7a579943-2505-4047-a32f-ae5620088f6a.png)
 ![image](https://user-images.githubusercontent.com/86854157/223866176-3a80e50e-fda6-4f60-8244-4e06d34bd2b0.png)
@@ -89,3 +90,8 @@ urlpatterns = [
 >>THIS STEP DOES NOT WORK RN
 ![image](https://user-images.githubusercontent.com/86854157/223869602-576c13b9-ae1b-4509-be5f-b5eaf52a2b92.png)
 ![image](https://user-images.githubusercontent.com/86854157/223869547-eb56dd76-ce0e-4ca7-a01f-4202ca206ee7.png)
+
+SURPRISE IT WORKS NOW
+![image](https://user-images.githubusercontent.com/86854157/223878307-01f7bafa-9fbe-42b1-9db5-c1dff174f7d3.png)
+>> When using VSCode, do 
+
