@@ -93,5 +93,7 @@ urlpatterns = [
 
 SURPRISE IT WORKS NOW
 ![image](https://user-images.githubusercontent.com/86854157/223878307-01f7bafa-9fbe-42b1-9db5-c1dff174f7d3.png)
->> When using VSCode, do 
+>> When using VSCode, do `Ctrl+Z`  to stop the currently running process and `bg` to keep it running in the background.
+
+![image](https://user-images.githubusercontent.com/86854157/223878704-981bd82d-b122-4e6f-ab9b-849526c3a7b3.png)
 
