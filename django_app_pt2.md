@@ -70,3 +70,46 @@ Then, migrate again with `python manage.py migrate`
 
 **Methods Used**
 * `Question.objects.all()`: displays all the questions in the database
+*  `q = Question(question_text="[what do you want the question to say?", pub_date=timezone.now())`: set the question with text of your choice and provide Django with a datetime (they request it in the default settinga file)
+*  `q.save()`: save the object into the database
+*  `q.id`: display the ID of the object
+*  `q.pub_date()`: display the publication date of the question
+>> Use `Ctrl+Z` to close the interactive shell
+
+8. Add a `__str__()` method to **Question** and **Choice** in `polls.models.py` to display the objects properly
+```
+from django.db import models
+
+class Question(models.Model):
+    # ...
+    def __str__(self):
+        return self.question_text
+
+class Choice(models.Model):
+    # ...
+    def __str__(self):
+        return self.choice_text
+```
+![image](https://user-images.githubusercontent.com/86854157/225454522-649f6ad7-3286-4d07-bdeb-7f99496bbdd3.png)
+
+
+9. Add a custom method to the model called `was_published_recently` to see if the question was published recently.
+```
+import datetime
+
+from django.db import models
+from django.utils import timezone
+
+
+class Question(models.Model):
+    # ...
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+```
+![image](https://user-images.githubusercontent.com/86854157/225454756-1c1913f0-9ee1-4239-9b94-96a3f44057f3.png)
+
+10. Open up the interactive shell again with `python manage.py shell` and do the following:
+![image](https://user-images.githubusercontent.com/86854157/225455371-68fefa47-1291-4153-ab25-9660232f32a8.png)
+![image](https://user-images.githubusercontent.com/86854157/225455424-5e263045-cb83-495f-a44c-7ffeed51873d.png)
+![image](https://user-images.githubusercontent.com/86854157/225455445-36c0a46a-0014-4d64-bd6d-9a6fda6afbc8.png)
+
