@@ -63,3 +63,10 @@ Then, migrate again with `python manage.py migrate`
 >> You have to migrate every time you make a change to your model.
 
 ![image](https://user-images.githubusercontent.com/86854157/225452748-81c7f15b-c187-4b80-b306-71c149412b5b.png)
+
+7. Enter the iteractive Python shell with `python manage.py shell`. Do the following:
+![image](https://user-images.githubusercontent.com/86854157/225453019-a232e732-8c33-4704-982f-741c75792381.png)
+![image](https://user-images.githubusercontent.com/86854157/225453299-6271c57e-3030-4b93-99cd-2bd6666f59e9.png)
+
+**Methods Used**
+* `Question.objects.all()`: displays all the questions in the database
