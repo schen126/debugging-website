@@ -113,3 +113,20 @@ class Question(models.Model):
 ![image](https://user-images.githubusercontent.com/86854157/225455424-5e263045-cb83-495f-a44c-7ffeed51873d.png)
 ![image](https://user-images.githubusercontent.com/86854157/225455445-36c0a46a-0014-4d64-bd6d-9a6fda6afbc8.png)
 
+![image](https://user-images.githubusercontent.com/86854157/225455848-95e78c2f-6251-4bd5-b83b-c006e25c9aff.png)
+
+11. Create an admin user using `python manage.py createsuperuser`
+
+12. Run the server with `python manage.py runserver` and open `localhost:8000/admin/`
+![image](https://user-images.githubusercontent.com/86854157/225456486-519593df-89b0-44de-a33b-d446ed0dbf05.png)
+![image](https://user-images.githubusercontent.com/86854157/225456553-38397f99-81cd-421a-9420-216f5c0fa2f5.png)
+
+13. Make the poll app modifiable in the admin by editing `polls/admin.py`
+```
+from django.contrib import admin
+
+from .models import Question
+
+admin.site.register(Question)
+```
+![image](https://user-images.githubusercontent.com/86854157/225456812-32e7a026-7c17-4052-9ded-4d1611fcf76f.png)
